@@ -1,50 +1,40 @@
-//comments in js
-var life = 100; //number
-life = life - 10; //90
-life = life - 10; //80
-console.log(life);
+//const age = 20;
 
-// var name = "Grace"; //string
-// console.log(name);
+const age = 10;
 
-console.log("hey");
+if (age > 18) {
+  console.log("You are good to go!");
+} else if (age < 15) {
+  console.log("Wow you are really young");
+} else {
+  console.log("You are not old enough");
+}
 
-var checkout = true; //boolean
-var checkout = false; //boolean
+const number = 18;
+//can use double equals but better to use triple equals to prevent bugs
+if (number === 18) {
+  console.log("You are good to go!");
+}
+if (number >= 18) {
+  console.log("Hi!");
+}
 
-var box;
-console.log(box); //undefined
+// >= greater than or equal to
+// <= less than or equal to
 
-var box = null; //no value
+const dice1 = 6;
+const dice2 = 3;
 
-// use const for selecting img
-// const life = 100;
-// can't redfine life
+if (dice1 === 6 && dice2 === 6) {
+  console.log("You rolled a double");
+} else {
+  console.log("You didn't");
+}
 
-// let life = 100;
-// life = life - 50;
-// console.log(life);
+if (dice1 === 6 || dice2 === 6) {
+  console.log("nice!");
+}
 
-const myAge = 18;
-const yourAge = 21;
-console.log(myAge + yourAge);
+// and = &&, or = ||
 
-//stay consistent when using single or double quotes
-console.log("Hello my name is " + "Grace");
-console.log("Hello it's me Grace");
-
-const name = "Grace";
-const age = 18;
-
-console.log(`Hello it's me and my name is ${name}`);
-
-console.log(
-  "Hello it's me " + name + " and my age is " + age + " and I am getting old"
-);
-
-console.log(`Hello it's me ${name} and my age is ${age}`);
-
-const combined = name + age;
-console.log(combined); //combined = string -> Grace18
-console.log(typeof combined);
-console.log(typeof age);
+//objects allow us to group together properties and values, have many related uses from storing functionality to
