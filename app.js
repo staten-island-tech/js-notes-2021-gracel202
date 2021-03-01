@@ -37,4 +37,29 @@ if (dice1 === 6 || dice2 === 6) {
 
 // and = &&, or = ||
 
-//objects allow us to group together properties and values, have many related uses from storing functionality to
+//objects allow us to group together properties and values, have many uses from storing related data to functionality, are used when the order of the properties doesn't matter
+
+//syntax of object: { }
+
+const day = 100;
+const person = {
+  day: day, //property on left side, value on right, value can be any type
+  name: "wes",
+  "cool-dude": true, //properties can have a dash (-)
+  "really cool": false, //properties can have spaces
+  777: true, //put comma at end
+  clothing: {
+    //nested object
+    shirts: 10,
+    pants: 2,
+  },
+};
+
+person.job = "Web Developer";
+person.day = 50;
+console.log(person);
+
+const wesFroze = Object.freeze(person); //can't be changed
+console.log(person);
+
+//properties can be accessed on console by typing "person.job", etc
