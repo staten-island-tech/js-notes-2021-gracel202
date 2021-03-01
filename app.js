@@ -1,50 +1,28 @@
-//comments in js
-var life = 100; //number
-life = life - 10; //90
-life = life - 10; //80
-console.log(life);
+//ForEach()
 
-// var name = "Grace"; //string
-// console.log(name);
+//syntax for array: itemArray.forEach(dog => dog + 2);
 
-console.log("hey");
+let names = ["Ania", "Dave", "Hannah", "Bob"];
 
-var checkout = true; //boolean
-var checkout = false; //boolean
+names.forEach((name) => {
+  console.log(name + " is the best!");
+});
 
-var box;
-console.log(box); //undefined
+const squares = document.querySelectorAll("div");
 
-var box = null; //no value
+squares.forEach((square) => {
+  square.addEventListener("click", clickOutcome);
+});
 
-// use const for selecting img
-// const life = 100;
-// can't redfine life
+function clickOutcome() {
+  alert("I have been clicked!");
+}
 
-// let life = 100;
-// life = life - 50;
-// console.log(life);
+//array is used for holding list of items where the order matters
+//each thing in an array is an item and its position in the array is an index
+//each item in array can be any type (string, boolean, object, etc)
 
-const myAge = 18;
-const yourAge = 21;
-console.log(myAge + yourAge);
+const name = ["wes", "kait", "snickers"];
+//array has no keys, order of 0,1,2,3,4,5,etc.
 
-//stay consistent when using single or double quotes
-console.log("Hello my name is " + "Grace");
-console.log("Hello it's me Grace");
-
-const name = "Grace";
-const age = 18;
-
-console.log(`Hello it's me and my name is ${name}`);
-
-console.log(
-  "Hello it's me " + name + " and my age is " + age + " and I am getting old"
-);
-
-console.log(`Hello it's me ${name} and my age is ${age}`);
-
-const combined = name + age;
-console.log(combined); //combined = string -> Grace18
-console.log(typeof combined);
-console.log(typeof age);
+console.log(name[0]); //result is wes, counting starts at 0
