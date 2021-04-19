@@ -14,7 +14,7 @@ console.log(pizza);
 
 function makePizza(toppings) {
   const pizzaPromise = new Promise(function (resolve, reject) {
-    resolve("Here is your pizza with the toppings ${toppings.join('')}`");
+    resolve(`Here is your pizza with the toppings ${toppings.join("")}`);
   });
   return pizzaPromise;
 }
